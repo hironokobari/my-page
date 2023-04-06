@@ -5,74 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Una Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Hirono Portfolio</title>
 </head>
 <body>
     <div>
     <header>
-        <h1>UnaLab</h1>
-        <!-- <img src="/images/rabbit.jpg" alt=""> -->
+        <div class="innerWrap">
+        <div class="header">
+            <div class="title">
+        <h1>Site Name</h1>
+            </div>
+        <div class="rabbit">
+        <!-- <img src="/images/png/rabbit.png" alt=""> -->
+    </div>
+    </div>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Works">Works</a></li>
+                <li><a href="#Study">My study</a></li>
+                <li><a href="#Profile">Profile</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>  
     </header>
-    <nav>
-        <ul>
-            <li>About this site</li>
-            <li>Works</li>
-            <li>My study</li>
-            <li>Profile</li>
-            <li>Contact me</li>
-        </ul>
-    </nav>
+
     <main>
-        <article>
-            <section>
-                <h2>About this site</h2>
-                <p>ここはUnaのポートフォリオサイトです。<br>
-                    これまでに手がけた制作物、身につけたスキルをまとめています。<br>
-                    ほんの少しでも私のことを知ってくれたら嬉しいです。</p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2>Works</h2>
+        <section id="About" class="aboutSite">
+            <div class="innerWrap">
+            <h2>About this site</h2>
+            <p>ここはNameのポートフォリオサイトです。<br>
+                これまでに作成した制作物、身につけたスキルをまとめています。<br>
+                ほんの少しでも私のことを知ってくれたら嬉しいです。</p>
+            </div>  
+        </section>
+
+        <section id="Works">
+            <div class="innerWrap">
+            <h2>Works</h2>
                 <p>今まで作成した成果物を紹介します。</p>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </section>
-        </article>
-        <article>
-            <section>
+                <div class="work"></div>
+                <div class="work"></div>
+            </div>  
+        </section>
+
+        <section id="Study">
+            <div class="innerWrap">
                 <h2>My skill set</h2>
                 <p>フロント技術に興味がありますが、幅広く取り組んできました。<br>
-                    JavaScriptライブラリやフレームワーク、インフラ基礎を勉強中です。</p>
-            </section>
-        </article>
-        <article>
-            <section>
+                    マークアップ言語、JavaScriptやインフラ基礎を勉強中です。</p>
+                
+                </div>  
+        </section>
+
+        <section id="Profile">
+            <div class="innerWrap">
                 <h2>Profile</h2>
                 <p>簡単な自己紹介になります。</p>
-            </section>
-        </article>
-        <section>
+            </div>  
+        </section>
+
+        <section id="Contact">
+            <div class="innerWrap">
             <h2>Contact me</h2>
     <div class="contact">
             <form action="">
             <p>お名前：
-                <input type="text">
+                <input type="text" name="user_name">
             </p>
             <p>メールアドレス：
-                <input type="text">
+                <input type="text" name="user_mail">
             </p>
             <p>メッセージ：<br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
             </p>
-            <p><input type="submit" value="送信する"></p>
+            <p><input type="submit" value="送信"></p>
         </form>
+    </div>  
+
+     </section>
+
     </div>
-        </section>
     </main>
     <footer>
-
+        <small>&copy; 2023 Hirono Kobari</small>
     </footer>
     </div>
 </body>
